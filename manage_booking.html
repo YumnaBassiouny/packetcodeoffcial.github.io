@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class = "subheader">
+        <nav>
+            <!------3aya a7ot sort el logo-------->
+            <a href="index.html"><img src="images/logo.png" width="40" height="40"></a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-university" onclick="hideMenu()" ></i>  
+            
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-university" onclick="showMenu()"></i>
+        </nav>
+        <h1>Booking Management</h1>
+      
+
+    </section>
+<!-------------------------------apply now----------------------------->
+
+<section class="step-wizard">
+    <ul class="step-wizard-list">
+        <li class="step-wizard-item current-item">
+            <span class="progress-count">1</span>
+            <span class="progress-label">Passenger Detail</span>
+        </li>
+        <li class="step-wizard-item">
+            <span class="progress-count">2</span>
+            <span class="progress-label">Passport Detail</span>
+        </li>
+        <li class="step-wizard-item">
+            <span class="progress-count">3</span>
+            <span class="progress-label">Billing Details</span>
+        </li>
+        <li class="step-wizard-item">
+            <span class="progress-count">4</span>
+            <span class="progress-label">Success</span>
+        </li>
+    </ul>
+</section>
+<section class="contact-us">
+    <section class="container-booking">
+      
+      <form action="manage_booking_2.html" class="form">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter full name" required />
+        </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="text" placeholder="Enter email address" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="number" placeholder="Enter phone number" required />
+          </div>
+          <div class="input-box">
+            <label>Birth Date</label>
+            <input type="date" placeholder="Enter birth date" required />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Female</label>
+            </div>
+            
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Address</label>
+          <input type="text" placeholder="Enter street address" required />
+          <input type="text" placeholder="Enter street address line 2" required />
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Country</option>
+                <option>America</option>
+                <option>Japan</option>
+                <option>India</option>
+                <option>Nepal</option>
+              </select>
+            </div>
+            <input type="text" placeholder="Enter your city" required />
+          </div>
+          <div class="column">
+            <input type="text" placeholder="Enter your region" required />
+            <input type="number" placeholder="Enter postal code" required />
+          </div>
+        </div>
+        <button>Submit</button>
+      </form>
+    </section>
+</section>
+
+
+<!-------------------------------footer----------------------------->
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p>beyb2o katbin kalam ktir melaza2 fi ba3d fi akher kol website fa olt a3ml zayahom</p>
+    <div class="icon">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+</section>
+
+
+
+ <script src="app.js"></script>
+
+</body>
+</html>

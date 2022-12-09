@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class = "subheader">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" width="40" height="40"></a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-university" onclick="hideMenu()" ></i>  
+            
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-university" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+      
+
+    </section>
+<!-------------------------------Contact us content----------------------------->
+
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>  
+                <span>
+                    <h5>Address-goes-in-here</h5>
+                    <p>Rest of the address</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>  
+                <span>
+                    <h5>+2 010*******9</h5>
+                    <p>Saturday to Thursday, 9AM to 4PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>  
+                <span>
+                    <h5>Admin@bue.edu.eg</h5>
+                    <p>Email us</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="formHandler.php" method="POST">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your e-mail" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn blue-btn">Send message</button>
+            </form>
+
+
+
+
+        </div>
+
+
+    </div>
+</section>
+
+
+<!-------------------------------footer----------------------------->
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p>beyb2o katbin kalam ktir melaza2 fi ba3d fi akher kol website fa olt a3ml zayahom</p>
+    <div class="icon">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+</section>
+
+<!---------------- JavaScript for toggle menu---------------------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+</body>
+</html>

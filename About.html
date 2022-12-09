@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class = "subheader">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" width="40" height="40"></a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-university" onclick="hideMenu()" ></i>  
+            
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-university" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+      
+
+    </section>
+<!-------------------------------Contact us content----------------------------->
+<section>
+    <div class="kalam">
+        <h1>Learn more about US</h1>
+        <p>Your typical week would include Collaborating with engineers and product managers throughout our organization to understand the problems we want to solve, exploring how we can solve them, and what our users have said about the problems and solutions so far
+            Discussing and collaboratively solving engineering problems with engineering collaborators in GitHub Issues and PRs, Slack, or Zoom
+            Opening a Pull Request to implement the next most important task, or fix the most critical bug and resolving suggestions in your code reviews
+            Responding to issues and review requests from other teams in our organization
+            Reviewing your teammates’ Pull Requests and providing helpful feedback
+            Share your experiences and opinions in our cycle meeting where we celebrate successes and strive to push our limits even further
+            Working with your team leader in your one-on-one meetings to grow your team and career
+        </p>
+    </div>
+</section>
+
+
+
+
+
+<!-------------------------------footer----------------------------->
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p>beyb2o katbin kalam ktir melaza2 fi ba3d fi akher kol website fa olt a3ml zayahom</p>
+    <div class="icon">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+</section>
+
+<!---------------- JavaScript for toggle menu---------------------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+</body>
+</html>
